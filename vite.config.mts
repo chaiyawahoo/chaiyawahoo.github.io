@@ -95,5 +95,4 @@ export default defineConfig({
       },
     },
   },
-  base: '/chaiyawahoo.github.io/'
 })
