@@ -1,9 +1,10 @@
 <template>
   <v-dialog max-width="500">
     <template v-slot:activator="{ props: activatorProps }">
-      <v-btn v-bind="activatorProps" :elevation="2">
+      <v-btn v-bind="activatorProps" :elevation="2" class="d-none d-sm-block">
         Contact Me
       </v-btn>
+      <v-btn v-bind="activatorProps" :elevation="2" :icon="`mdi-email`" class="d-sm-none"></v-btn>
     </template>
 
     <template v-slot:default="{ isActive }">
