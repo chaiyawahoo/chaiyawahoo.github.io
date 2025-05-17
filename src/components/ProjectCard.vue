@@ -17,7 +17,6 @@ const props = defineProps({
 })
 
 function getImageUrl() {
-  const imageUrl = "/images/" + props.filename
-  return new URL(imageUrl, import.meta.url).href
+  return new URL(`../assets/images/${props.filename}`, import.meta.url).href
 }
 </script>
