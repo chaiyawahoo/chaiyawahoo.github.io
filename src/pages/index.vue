@@ -1,16 +1,11 @@
 <template>
   <h1>Projects</h1>
   <Projects />
-  <v-container>
-    <v-row class="pa-2 ma-2" justify="center">
-      <v-spacer />
-      <v-btn :elevation="2" :href="getResumeUrl()" download="chaiyawat-nunes-resume.pdf"
-          size="x-large">Download Resume</v-btn>
-      <v-spacer />
-    </v-row>
-  </v-container>
-  
-
+  <v-divider />
+  <div class="d-flex justify-center ma-4">
+    <v-btn :elevation="2" :href="getResumeUrl()" download="chaiyawat-nunes-resume.pdf" size="x-large">Download
+      Resume</v-btn>
+  </div>
 </template>
 
 <script lang="ts" setup>

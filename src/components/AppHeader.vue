@@ -4,8 +4,11 @@
       Chaiyawat Nunes
       <span class="subtitle mx-4">Game Developer</span>
     </v-app-bar-title>
+    <ContactDialogue />
   </v-app-bar>
 </template>
+
+
 
 <style scoped>
 .subtitle {
