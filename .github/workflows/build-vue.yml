@@ -11,4 +11,5 @@ jobs:
       with:
         username: 'chaiyawahoo'
         reponame: 'chaiyawahoo.github.io'
+        cname: 'chaiyawahoo.com'
         token: ${{ secrets.GITHUB_TOKEN }}
