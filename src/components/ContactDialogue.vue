@@ -40,8 +40,7 @@ const items = [
 ]
 </script>
 
-<style scoped>
-ul {
-  list-style-type: none;
-}
+<style scoped lang="sass">
+ul
+  list-style-type: none
 </style>

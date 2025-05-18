@@ -1,6 +1,6 @@
 <template>
-  <h1>Projects</h1>
-  <Projects />
+  <h1>Highlights</h1>
+  <Highlights />
   <v-divider />
   <div class="d-flex justify-center ma-4">
     <v-btn :elevation="2" :href="getResumeUrl()" download="chaiyawat-nunes-resume.pdf" size="x-large">Download

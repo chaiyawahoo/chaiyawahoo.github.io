@@ -22,9 +22,8 @@ const style = computed(() => {
 })
 </script>
 
-<style scoped>
-.subtitle {
-  font-size: 12pt;
-  color: darkgray;
-}
+<style scoped lang="sass">
+.subtitle
+  font-size: 12pt
+  color: darkgray
 </style>

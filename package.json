@@ -16,6 +16,7 @@
     "@fontsource/roboto": "5.2.5",
     "@mdi/font": "7.4.47",
     "@vueuse/core": "^13.1.0",
+    "simple-icons": "^14.14.0",
     "vue": "^3.5.13",
     "vuetify": "^3.8.1"
   },
