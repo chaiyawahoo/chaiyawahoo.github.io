@@ -9,7 +9,7 @@
       target="_blank"
       :title="item.title"
     >
-      <v-icon :icon="item.icon" :size="16" />
+      <v-icon :icon="item.icon" :size="(typeof item.icon == 'string') ? 16 : 14" />
     </a>
 
     <div
@@ -22,10 +22,12 @@
 </template>
 
 <script setup lang="ts">
+import { siLinktree } from 'simple-icons';
+
 const items = [
   {
     title: "Linktree",
-    icon: `mdi-palm-tree`,
+    icon: [siLinktree.path],
     href: "https://linktr.ee/chaiyawahoo",
   },
   {
@@ -41,12 +43,14 @@ const items = [
 ];
 </script>
 
-<style scoped lang="sass">
-.social-link :deep(.v-icon)
-  color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity))
-  text-decoration: none
-  transition: .2s ease-in-out
+<style scoped lang="scss">
+.social-link :deep(.v-icon) {
+  color: rgba(var(--v-theme-on-background), var(--v-disabled-opacity));
+  text-decoration: none;
+  transition: .2s ease-in-out;
 
-  &:hover
-    color: rgba(25, 118, 210, 1)
+  &:hover {
+    color: rgba(25, 118, 210, 1);
+  }
+}
 </style>
