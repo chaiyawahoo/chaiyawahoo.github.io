@@ -10,7 +10,5 @@
 </template>
 
 <script lang="ts" setup>
-function getResumeUrl() {
-  return new URL("../assets/files/resume.pdf", import.meta.url).href
-}
+
 </script>
