@@ -21,4 +21,12 @@
   color: rgb(var(--v-theme-primary)); // change this eventually ! theme color
   font-weight: 500;
 }
+
+.v-container > p:first-child {
+  font-size: 24pt;
+}
+
+.v-container > p:not(:first-child) {
+  margin-top: 2vh;
+}
 </style>
