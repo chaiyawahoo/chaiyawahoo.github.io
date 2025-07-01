@@ -58,7 +58,12 @@ export default defineConfig({
             name: 'Inter',
             weights: [100, 300, 400, 500, 700, 900],
             styles: ['normal', 'italic'],
-          }
+          },
+          {
+            name: 'Arvo',
+            weights: [400, 700],
+            styles: ['normal', 'italic'],
+          },
         ],
       },
     }),

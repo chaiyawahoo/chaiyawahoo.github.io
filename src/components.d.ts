@@ -14,7 +14,6 @@ declare module 'vue' {
     ContactDialogue: typeof import('./components/ContactDialogue.vue')['default']
     HeaderButtons: typeof import('./components/HeaderButtons.vue')['default']
     Highlights: typeof import('./components/Highlights.vue')['default']
-    IconGodot: typeof import('./components/icons/IconGodot.vue')['default']
     ProjectCard: typeof import('./components/ProjectCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

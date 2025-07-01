@@ -2,7 +2,7 @@
   <v-app-bar :style="style" :elevation="elevation">
     <v-app-bar-title>
       Chaiyawat Nunes
-      <span class="subtitle mx-4">Game Developer</span>
+      <span class="subtitle mx-4 text-light-gray">Game Developer</span>
     </v-app-bar-title>
     <div class="d-none d-sm-block">
       <HeaderButtons />
@@ -41,10 +41,15 @@ const elevation = computed(() => {
 <style lang="scss">
 .subtitle {
   font-size: 12pt;
-  color: darkgray;
+  color: rgba(var(--v-theme-on-background-darken));
+  font-family: 'Inter';
 }
 
 .v-btn :deep(.v-btn__overlay) {
   background-color: transparent;
+}
+
+.v-app-bar-title {
+  font-family: 'Arvo';
 }
 </style>
