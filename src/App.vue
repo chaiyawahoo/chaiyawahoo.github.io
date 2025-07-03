@@ -1,18 +1,29 @@
 <template>
-  <div style="display: none;">
-    <vue-turnstile site-key="0x4AAAAAABjQYUwPMH1-QMsa" v-model="token" />
-    <div>Token: {{ token }}</div>
-  </div>
-  <v-app>
+  <Turnstile v-show="showTurnstile" ref="turnstile"/>
+  <v-app v-show="showApp">
     <router-view />
   </v-app>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import VueTurnstile from 'vue-turnstile'
+import { useTemplateRef, onMounted } from 'vue'
+import Turnstile from './components/Turnstile.vue';
 
-const token = ref('')
+const turnstile = useTemplateRef('turnstile')
+const showApp = ref(false)
+const showTurnstile = ref(true)
+
+onMounted(() => {
+  if (turnstile.value) {
+    watch(() => turnstile.value?.token, (newToken, oldToken) => {
+      if (newToken != '') {
+        showApp.value = true
+        showTurnstile.value = false
+        // console.log(newToken);
+      }
+    })
+  }
+})
 </script>
 
 <style lang="scss">
