@@ -1,6 +1,6 @@
 <template>
-  <Turnstile v-show="showTurnstile" ref="turnstile"/>
-  <v-app v-show="showApp">
+  <Turnstile v-if="showTurnstile" ref="turnstile"/>
+  <v-app v-if="showApp">
     <router-view />
   </v-app>
 </template>
